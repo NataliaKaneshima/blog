@@ -4,13 +4,13 @@ import headerStyle from './header.module.scss'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
-    query {
-        site {
-          siteMetadata {
-            title
-          }
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
     `)
     
     return (
